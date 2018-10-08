@@ -11,8 +11,8 @@ import javazoom.jl.player.advanced.AdvancedPlayer;
  * Provide basic playing of MP3 files via the javazoom library.
  * See http://www.javazoom.net/
  * 
- * @author David J. Barnes and Michael Kölling.
- * @version 2016.02.29
+ * @author alex floyd  
+ * @version 10/7/18
  */
 public class MusicPlayer
 {
