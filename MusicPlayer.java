@@ -6,13 +6,13 @@ import javazoom.jl.decoder.JavaLayerException;
 import javazoom.jl.player.AudioDevice;
 import javazoom.jl.player.FactoryRegistry;
 import javazoom.jl.player.advanced.AdvancedPlayer;
+import java.util.Random;
+import java.util.ArrayList;
 
 /**
  * Provide basic playing of MP3 files via the javazoom library.
  * See http://www.javazoom.net/
  * 
- * @author alex floyd  
- * @version 10/7/18
  */
 public class MusicPlayer
 {
@@ -73,6 +73,19 @@ public class MusicPlayer
         }
         catch (Exception ex) {
             reportProblem(filename);
+        }
+    }
+    
+    public void randomPlaylist()
+    {
+        Random rand = new Random();
+        int size;
+        ArrayList<Track> leftToPlay = new ArrayList<Track>();
+        while(leftToPlay.size() > 0)
+        {
+            size = rand.nextInt(leftToPlay.size());
+            Track playing = leftToPlay.remove(size);
+            player.playSample(playing.getFilename());
         }
     }
     
