@@ -13,8 +13,6 @@ import java.util.ArrayList;
  * Provide basic playing of MP3 files via the javazoom library.
  * See http://www.javazoom.net/
  * 
- * @author alex floyd   .
- * @version 2018/10/8
  */
 public class MusicPlayer
 {

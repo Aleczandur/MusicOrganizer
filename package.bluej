@@ -11,13 +11,7 @@ dependency3.type=UsesDependency
 dependency4.from=MusicOrganizer
 dependency4.to=TrackReader
 dependency4.type=UsesDependency
-dependency5.from=MusicPlayer
-dependency5.to=Track
-dependency5.type=UsesDependency
-editor.fx.0.height=928
-editor.fx.0.width=816
-editor.fx.0.x=288
-editor.fx.0.y=117
+
 objectbench.height=93
 objectbench.width=760
 package.divider.horizontal=0.6
